@@ -52,7 +52,6 @@ module ReversiMethods
     turn_succeed = false
     Position::DIRECTIONS.each do |direction|
       next_pos = pos.next_position(direction)
-
       turn_succeed = true if turn(copied_board, next_pos, stone_color, direction)
     end
 
